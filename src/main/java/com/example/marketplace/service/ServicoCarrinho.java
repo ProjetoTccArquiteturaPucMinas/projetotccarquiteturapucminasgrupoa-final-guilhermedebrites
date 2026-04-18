@@ -40,6 +40,10 @@ public class ServicoCarrinho {
         int quantidadeDeItems = selecoes.stream().mapToInt(SelecaoCarrinho::getQuantidade).sum();
         int descontoPorQuantidadeDeItem = 0;
         switch (quantidadeDeItems) {
+            case 1 -> {
+                descontoPorQuantidadeDeItem = 0;
+                break;
+            }
             case 2 -> {
                 descontoPorQuantidadeDeItem = 5;
                 break;
@@ -48,12 +52,9 @@ public class ServicoCarrinho {
                 descontoPorQuantidadeDeItem = 7;
                 break;
             }
-            case 4 -> {
-                descontoPorQuantidadeDeItem =  10;
-                break;
-            }
             default -> {
-                descontoPorQuantidadeDeItem = 0;
+                descontoPorQuantidadeDeItem = 10;
+                break;
             }
         }
 
