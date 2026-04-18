@@ -1,6 +1,6 @@
 # Sistema de Cálculo de Descontos para Marketplace
 
-## Seu Nome: 
+## Seu Nome: Guilherme Gomes de Brites
 
 ## Visão Geral do Projeto
 
